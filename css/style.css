@@ -1142,9 +1142,6 @@ a.fr:before {
   .language ul li > a.fr {
     font-size: 1.35rem;
   }
-  .navbar .menulink{
-     font-size: 1rem;
-   }
 
   .header .navbar > a:hover {
     color: var(--main-color);
@@ -1155,15 +1152,16 @@ a.fr:before {
     font-size: 2rem;
     content: '[';
     position: absolute;
-    display: none;
     left: 40px;
+    opacity: 0;
   }
   .header .navbar > a::after {
     font-size: 2rem;
     content: ']';
     position: absolute;
-    display: none;
     right: 40px;
+    opacity: 0;
+    transition: 0.7s ease;
   }
   .header .navbar > a:hover::before {
     font-size: 2rem;
@@ -1171,6 +1169,8 @@ a.fr:before {
     position: absolute;
     display: inline;
     left: 0;
+    opacity: 1;
+    transition: 0.7s ease;
   }
   .header .navbar > a:hover::after {
     font-size: 2rem;
@@ -1178,6 +1178,7 @@ a.fr:before {
     position: absolute;
     display: inline;
     right: 0;
+    opacity: 1;
   }
 
   .header .navbar.active {
