@@ -201,7 +201,27 @@ section {
   display: inline-block;
   width: 40px;
   height: 30px;
+  background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.language-selectedBr:before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 30px;
   background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.language-selectedFr:before {
+  content: '';
+  display: inline-block;
+  width: 40px;
+  height: 30px;
+  background-image: url(https://www.worldometers.info/img/flags/fr-flag.gif);
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 10px;
@@ -242,7 +262,7 @@ a.fr:before {
   background-image: url(https://www.worldometers.info/img/flags/sp-flag.gif);
 }
 
-.navbar > .language ul:hover {
+.language:hover > ul {
   display: block;
 }
 
@@ -940,7 +960,7 @@ a.fr:before {
   align-items: center;
   justify-content: center;
 }
-.ourProcess .boxAbout {
+.ourProcess .box-container {
   max-width: 1140px;
   display: flex;
   align-items: center;
@@ -1121,7 +1141,7 @@ a.fr:before {
 
   .language ul {
     position: absolute;
-    top: -220px;
+    top: -158px;
     left: -80px;
     width: 200px;
     background-color: #fff;
