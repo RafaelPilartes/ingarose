@@ -1,7 +1,17 @@
 let langEn = document.getElementById('en')
 let langPt = document.getElementById('br')
 let langFr = document.getElementById('fr')
+let language = document.getElementById('language')
+let ulLang = document.getElementById('ulLang')
 
+let home = document.getElementById('home')
+
+home.addEventListener('click', () => {
+  ulLang.style.display = 'none'
+})
+language.addEventListener('click', () => {
+  ulLang.style.display = 'block'
+})
 // HEADER
 let homeHeaderLink = document.getElementById('homeHeaderLink')
 let aboutHeaderLink = document.getElementById('aboutHeaderLink')
@@ -116,8 +126,10 @@ langEn.addEventListener('click', () => {
 })
 
 langPt.addEventListener('click', () => {
+  ulLang.style.display = 'none'
   languageselected.classList.add('language-selectedBr')
   languageselected.textContent = 'pt-BR'
+
   languageselected.classList.remove('language-selected')
   languageselected.classList.remove('language-selectedFr')
   // MENULINKS
@@ -255,8 +267,10 @@ langPt.addEventListener('click', () => {
 })
 
 langFr.addEventListener('click', () => {
+  ulLang.style.display = 'none'
   languageselected.classList.add('language-selectedFr')
   languageselected.textContent = 'FR'
+
   languageselected.classList.remove('language-selected')
   languageselected.classList.remove('language-selectedBr')
   // MENULINKS

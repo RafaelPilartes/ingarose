@@ -262,10 +262,6 @@ a.fr:before {
   background-image: url(https://www.worldometers.info/img/flags/sp-flag.gif);
 }
 
-.language:hover > ul {
-  display: block;
-}
-
 #visao-btn {
   display: none;
 }
