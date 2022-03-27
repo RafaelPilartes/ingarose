@@ -123,7 +123,6 @@ section {
   height: 5.5rem;
 }
 .header .navbar {
-  transition: 1s ease;
   display: flex;
   flex-wrap: wrap;
 }
@@ -140,33 +139,36 @@ section {
 .header .navbar > a:hover {
   color: var(--main-color);
 }
+
 .header .navbar > a::before {
   font-size: 1.3rem;
   content: '[';
   position: absolute;
-  display: none;
+  opacity: 0;
   left: 40px;
+  transition: 0.5s ease;
 }
 .header .navbar > a::after {
   font-size: 1.3rem;
   content: ']';
   position: absolute;
-  display: none;
+  opacity: 0;
   right: 40px;
+  transition: 0.5s ease;
 }
 .header .navbar > a:hover::before {
   font-size: 1.3rem;
   content: '[';
   position: absolute;
-  display: inline;
-  left: 0;
+  opacity: 1;
+  left: 4px;
 }
 .header .navbar > a:hover::after {
   font-size: 1.3rem;
   content: ']';
   position: absolute;
-  display: inline;
-  right: 0;
+  opacity: 1;
+  right: 4px;
 }
 
 .header .icons div {
@@ -446,7 +448,39 @@ a.fr:before {
   justify-content: center;
   z-index: 999;
 }
+.gotoTop > .txtGotoTop::before {
+  font-size: 1.3rem;
+  content: '[';
+  position: absolute;
+  opacity: 0;
+  left: 16px;
+  transition: 0.5s ease;
+}
+.gotoTop > .txtGotoTop::after {
+  font-size: 1.3rem;
+  content: ']';
+  position: absolute;
+  opacity: 0;
+  right: 16px;
+  transition: 0.5s ease;
+}
+.gotoTop > .txtGotoTop:hover::before {
+  font-size: 1.3rem;
+  content: '[';
+  position: absolute;
+  opacity: 1;
+  left: -12px;
+}
+.gotoTop > .txtGotoTop:hover::after {
+  font-size: 1.3rem;
+  content: ']';
+  position: absolute;
+  opacity: 1;
+  right: -12px;
+}
+
 .txtGotoTop {
+  position: relative;
   font-size: 1.3rem;
   font-weight: 900;
   color: #575757;
@@ -613,10 +647,10 @@ a.fr:before {
   width: 100%;
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  overflow: hidden;
   justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
 }
 .ourValues .img {
   width: 100%;
@@ -669,6 +703,8 @@ a.fr:before {
 .ourValues .boxValues {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 40px;
@@ -848,6 +884,8 @@ a.fr:before {
 .ourServices .boxServices {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 40px;
@@ -899,13 +937,15 @@ a.fr:before {
 .ourProcess {
   width: 100%;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 .ourProcess .boxAbout {
   max-width: 1140px;
   display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   margin-top: 15px;
   margin-bottom: 40px;
 }
@@ -949,6 +989,8 @@ a.fr:before {
 .ourProcess .boxValues {
   position: relative;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
   margin-top: 40px;
@@ -972,8 +1014,8 @@ a.fr:before {
   border-radius: 20%;
 }
 .ourProcess .boxValues .areaIcon .icons {
-  color: #ffc6b593;
-  font-size: 3rem;
+  color: #f8d2c7bd;
+  font-size: 4rem;
 }
 .ourProcess .boxValues h5 {
   font-size: 1.3rem;
@@ -1007,7 +1049,8 @@ a.fr:before {
 }
 
 /* media queries  */
-@media (max-width: 991px) {
+
+@media (max-width: 1031px) {
   html {
     font-size: 55%;
   }
@@ -1018,6 +1061,44 @@ a.fr:before {
 
   section {
     padding: 2rem;
+  }
+  .qualidades {
+    display: none;
+  }
+
+  .footer .box-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .footer .box-container .box {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .aboutUs .box-container p {
+    width: 90%;
+  }
+  .ourValues p {
+    width: 90%;
+  }
+  .ourTeam .box-container p {
+    width: 90%;
+  }
+  .ourServices p {
+    width: 90%;
+  }
+  .ourProcess .box-container p {
+    width: 90%;
+  }
+}
+@media (max-width: 844px) {
+  .footer .box-container {
+    flex-wrap: wrap;
+  }
+  .footer .box-container .box {
+    align-items: center;
   }
 }
 
@@ -1061,6 +1142,9 @@ a.fr:before {
   .language ul li > a.fr {
     font-size: 1.35rem;
   }
+  .navbar .menulink{
+     font-size: 1rem;
+   }
 
   .header .navbar > a:hover {
     color: var(--main-color);
@@ -1136,8 +1220,70 @@ a.fr:before {
   }
 }
 
+@media (max-width: 562px) {
+  .aboutUs .box-container h1 {
+    font-size: 4rem;
+  }
+  .aboutUs .box-container span {
+    font-size: 4rem;
+  }
+  .ourValues h1 {
+    font-size: 4rem;
+  }
+  .ourValues span {
+    font-size: 4rem;
+  }
+  .ourTeam .box-container h1 {
+    font-size: 4rem;
+  }
+  .ourTeam .box-container span {
+    font-size: 4rem;
+  }
+  .ourServices h1 {
+    font-size: 4rem;
+  }
+  .ourServices span {
+    font-size: 4rem;
+  }
+  .ourProcess .box-container h1 {
+    font-size: 4rem;
+  }
+  .ourProcess .box-container span {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 518px) {
+  .home .content h4 {
+    font-size: 5.6rem;
+  }
+  .home .content h2 {
+    font-size: 9.8rem;
+  }
+  .home .content h1 {
+    font-size: 9.8rem;
+  }
+
+  .home .content p {
+    font-size: 1em;
+  }
+}
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+}
+@media (max-width: 420px) {
+  .home .content h4 {
+    font-size: 4rem;
+  }
+  .home .content h2 {
+    font-size: 8rem;
+  }
+  .home .content h1 {
+    font-size: 8rem;
+  }
+
+  .home .content p {
+    font-size: 1em;
   }
 }
