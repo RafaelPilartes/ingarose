@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
-@font-face {
-  font-family: 'ebpfont';
-  src: url('../fonte/Vendura-SemiBold-Demo.otf') format('opentype');
-  font-weight: 600;
-  font-style: normal;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
 :root {
-  --main-color: #bd8689;
+  --main-color: #bd8983;
   --black: hsl(240, 16%, 9%);
   --bg: #010103;
   --border: 0.1rem solid rgba(255, 255, 255, 0.3);
 }
 
 * {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -110,7 +106,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem 7%;
+  padding: 1.5rem 4%;
   border-bottom: var(--border);
   position: fixed;
   top: 0;
@@ -134,6 +130,7 @@ section {
   letter-spacing: 3px;
   padding: 10px 15px;
   text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
 }
 
 .header .navbar > a:hover {
@@ -185,8 +182,7 @@ section {
 
 .language {
   position: relative;
-  width: 120px;
-  margin-left: 40px;
+  margin-left: 10px;
   font-weight: bold;
 }
 .language-selected {
@@ -199,8 +195,8 @@ section {
 .language-selected:before {
   content: '';
   display: inline-block;
-  width: 40px;
-  height: 30px;
+  width: 30px;
+  height: 20px;
   background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -209,8 +205,8 @@ section {
 .language-selectedBr:before {
   content: '';
   display: inline-block;
-  width: 40px;
-  height: 30px;
+  width: 30px;
+  height: 20px;
   background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
   background-size: cover;
   background-repeat: no-repeat;
@@ -219,9 +215,9 @@ section {
 .language-selectedFr:before {
   content: '';
   display: inline-block;
-  width: 40px;
-  height: 30px;
-  background-image: url(https://www.worldometers.info/img/flags/fr-flag.gif);
+  width: 30px;
+  height: 20px;
+  background-image: url(https://www.worldometers.info/img/flags/sp-flag.gif);
   background-size: cover;
   background-repeat: no-repeat;
   margin-right: 10px;
@@ -290,72 +286,7 @@ a.fr:before {
   color: var(--black);
   padding: 1rem;
   text-transform: none;
-}
-
-.header .search-form label {
-  cursor: pointer;
-  font-size: 2.2rem;
-  margin-right: 1.5rem;
-  color: var(--black);
-}
-
-.header .search-form label:hover {
-  color: var(--main-color);
-}
-
-.header .cart-items-container {
-  position: absolute;
-  top: 100%;
-  right: -100%;
-  height: calc(100vh - 9.5rem);
-  width: 35rem;
-  background: #fff;
-  padding: 0 1.5rem;
-}
-
-.header .cart-items-container.active {
-  right: 0;
-}
-
-.header .cart-items-container .cart-item {
-  position: relative;
-  margin: 2rem 0;
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-.header .cart-items-container .cart-item .fa-times {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 2rem;
-  cursor: pointer;
-  color: var(--black);
-}
-
-.header .cart-items-container .cart-item .fa-times:hover {
-  color: var(--main-color);
-}
-
-.header .cart-items-container .cart-item img {
-  height: 7rem;
-}
-
-.header .cart-items-container .cart-item .content h3 {
-  font-size: 2rem;
-  color: var(--black);
-  padding-bottom: 0.5rem;
-}
-
-.header .cart-items-container .cart-item .content .price {
-  font-size: 1.5rem;
-  color: var(--main-color);
-}
-
-.header .cart-items-container .btn {
-  width: 100%;
-  text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 .home {
@@ -392,6 +323,13 @@ a.fr:before {
   }
 }
 
+.home .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .home .content h4 {
   font-size: 7rem;
   font-weight: 500;
@@ -401,6 +339,7 @@ a.fr:before {
   padding: 0;
   text-transform: uppercase;
   color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 .home .content h2 {
   font-size: 11rem;
@@ -410,6 +349,7 @@ a.fr:before {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 .home .content h1 {
   font-size: 11rem;
@@ -419,6 +359,7 @@ a.fr:before {
   text-align: center;
   text-transform: uppercase;
   color: #fff;
+  font-family: 'Raleway', sans-serif;
 }
 
 .home .content p {
@@ -430,12 +371,14 @@ a.fr:before {
   padding: 1rem 0;
   color: #eee;
   max-width: 360px;
+  font-family: 'Raleway', sans-serif;
 }
 .areaBtnHome {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Raleway', sans-serif;
 }
 .btnHome {
   width: 148px;
@@ -447,7 +390,8 @@ a.fr:before {
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #fff;
-  background-color: #fddcce;
+  background-color: #edd8ce;
+  font-family: 'Raleway', sans-serif;
 }
 .margintop {
   margin-top: 12px;
@@ -569,6 +513,7 @@ a.fr:before {
   width: 100%;
   height: 160px;
   position: relative;
+  margin: 10px;
   background: url('../images/imagem1.jpg') repeat fixed 10%;
   display: flex;
   flex-direction: row;
@@ -594,9 +539,9 @@ a.fr:before {
 }
 .qualidades .box-container h2 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: 500;
   letter-spacing: 3px;
-  color: var(--main-color);
+  color: #facbb9;
   margin-top: 20px;
   margin-bottom: 10px;
   margin-bottom: 10px;
@@ -1055,8 +1000,118 @@ a.fr:before {
 }
 
 .contactUs {
-  background: url('../images/background.jpg') repeat fixed 10%;
+  width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.contactUs .img {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background: url(../images/imagem4.jpg) 100% no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+  animation: zoom 20s linear infinite;
+}
+.contactUs .boxContactUs {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  z-index: 11;
+}
+.contactUs h1 {
+  font-size: 7rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #facbb9;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  z-index: 11;
+}
+.contactUs span {
+  font-size: 7rem;
+  font-weight: 600;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  z-index: 11;
+}
+
+.contactUs h5 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #fff;
+  z-index: 11;
+}
+.contactUs p {
+  max-width: 1100px;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  margin: 20px;
+  color: #fff;
+  z-index: 11;
+}
+.contactUs .boxContactUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+.contactUs .boxContactUs p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: right;
+  line-height: 4px;
+  letter-spacing: 1px;
+  color: #fff;
+  z-index: 11;
+}
+.contactUs .boxContactUs .linkTxt {
+  font-weight: 700;
+  color: #adadad;
+}
+.contactUs .boxContactUs #name {
+  width: 200px;
+  height: 36px;
+  padding: 8px;
+  margin-right: 28px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #636363;
+  border-radius: 5px;
+}
+.contactUs .boxContactUs #email {
+  width: 200px;
+  height: 36px;
+  padding: 8px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  border: 1px solid #636363;
+  border-radius: 5px;
+}
+.contactUs .boxContactUs #sms {
+  width: 430px;
+  height: 90px;
+  padding: 8px;
+  background-color: transparent;
+  border: 1px solid #636363;
+  border-radius: 8px;
 }
 
 .footer {
@@ -1077,6 +1132,12 @@ a.fr:before {
 
   section {
     padding: 2rem;
+  }
+  .left {
+    display: none;
+  }
+  .right {
+    display: none;
   }
   .qualidades {
     display: none;
