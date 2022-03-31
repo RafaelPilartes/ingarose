@@ -640,7 +640,7 @@ section {
 }
 
 .ourValues .boxValues .myValues {
-  max-width: 251px;
+  max-width: 230px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -821,7 +821,7 @@ section {
 }
 
 .ourServices .boxServices .myServices {
-  max-width: 330px;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
