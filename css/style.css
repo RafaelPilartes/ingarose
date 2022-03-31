@@ -47,6 +47,11 @@ section {
   padding: 2rem 7%;
 }
 
+
+.conteinerAll{
+  display: none;
+}
+
 .margem {
   margin: 8rem 0 8rem 0;
 }
@@ -134,11 +139,11 @@ section {
 }
 
 .header .navbar > a:hover {
-  color: var(--main-color);
+  color: #facbb9;
 }
 
 .header .navbar > a::before {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   content: '[';
   position: absolute;
   opacity: 0;
@@ -146,7 +151,7 @@ section {
   transition: 0.5s ease;
 }
 .header .navbar > a::after {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   content: ']';
   position: absolute;
   opacity: 0;
@@ -154,14 +159,14 @@ section {
   transition: 0.5s ease;
 }
 .header .navbar > a:hover::before {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   content: '[';
   position: absolute;
   opacity: 1;
   left: 4px;
 }
 .header .navbar > a:hover::after {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   content: ']';
   position: absolute;
   opacity: 1;
@@ -187,44 +192,16 @@ section {
 }
 .language-selected {
   display: flex;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   align-items: center;
+  justify-content: center;
   color: #000000;
   cursor: pointer;
 }
-.language-selected:before {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 20px;
-  background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-.language-selectedBr:before {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 20px;
-  background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-.language-selectedFr:before {
-  content: '';
-  display: inline-block;
-  width: 30px;
-  height: 20px;
-  background-image: url(https://www.worldometers.info/img/flags/sp-flag.gif);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
+
 .navbar > .language ul {
   position: absolute;
-  width: 200px;
+  width: 130px;
   background-color: #fff;
   border: 1px solid #fff;
   padding: 6px;
@@ -235,27 +212,17 @@ section {
   list-style: none;
   margin-bottom: 10px;
 }
-.language ul li a {
-  font-size: 1rem;
+.language .ulLang .en{
+  font-size: 0.5rem;
+  color: red;
 }
-.language ul li a:before {
-  content: '';
-  display: inline-block;
-  width: 35px;
-  height: 24px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  vertical-align: middle;
-  margin-right: 10px;
+.language .ulLang .br{
+  font-size: 0.5rem;
+  color: red;
 }
-a.en:before {
-  background-image: url(https://www.worldometers.info/img/flags/us-flag.gif);
-}
-a.br:before {
-  background-image: url(https://www.worldometers.info/img/flags/br-flag.gif);
-}
-a.fr:before {
-  background-image: url(https://www.worldometers.info/img/flags/sp-flag.gif);
+.language .ulLang .fr{
+  font-size: 0.5rem;
+  color: red;
 }
 
 #visao-btn {
@@ -302,10 +269,11 @@ a.fr:before {
   overflow: hidden;
 }
 
-.home img {
+.home .imgBackground {
   width: 100%;
   min-height: 100vh;
   position: absolute;
+  background-image: url(../images/cascatas.jpg);
   background-size: cover;
   background-position: center;
   animation: zoom 24s linear infinite;
@@ -331,9 +299,9 @@ a.fr:before {
 }
 
 .home .content h4 {
-  font-size: 7rem;
-  font-weight: 500;
-  line-height: 80px;
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 60px;
   letter-spacing: 3px;
   text-align: center;
   padding: 0;
@@ -342,9 +310,9 @@ a.fr:before {
   font-family: 'Raleway', sans-serif;
 }
 .home .content h2 {
-  font-size: 11rem;
-  font-weight: 500;
-  line-height: 100px;
+  font-size: 7.2rem;
+  font-weight: 400;
+  line-height: 70px;
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
@@ -352,9 +320,9 @@ a.fr:before {
   font-family: 'Raleway', sans-serif;
 }
 .home .content h1 {
-  font-size: 11rem;
+  font-size: 8rem;
   font-weight: 600;
-  line-height: 100px;
+  line-height: 70px;
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
@@ -630,7 +598,7 @@ a.fr:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.549);
+  background-color: #000000a4;
   z-index: 1;
 }
 
@@ -664,7 +632,6 @@ a.fr:before {
 .ourValues .boxValues {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
@@ -993,20 +960,20 @@ a.fr:before {
   font-size: 1.2rem;
   font-weight: 500;
   color: #111;
-  line-height: 1.8;
+  line-height: 1.4;
   letter-spacing: 1px;
-  margin-top: 8px;
   text-align: center;
 }
 
 .contactUs {
   width: 100%;
+  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: hidden;
   justify-content: center;
+  overflow: hidden;
 }
 
 .contactUs .img {
@@ -1018,6 +985,10 @@ a.fr:before {
   background-position: center;
   z-index: -1;
   animation: zoom 20s linear infinite;
+}
+
+.contactUs .headerContact{
+  display: flex; flex-direction: row
 }
 .contactUs .boxContactUs {
   position: relative;
@@ -1073,8 +1044,18 @@ a.fr:before {
   flex-direction: row;
   justify-content: left;
 }
+
+.contactUs .contactLeft{
+  width: 50%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+
+}
+
 .contactUs .boxContactUs p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 500;
   text-align: right;
   line-height: 4px;
@@ -1086,9 +1067,14 @@ a.fr:before {
   font-weight: 700;
   color: #adadad;
 }
+.contactUs .boxContactUs .inputs:focus {
+  box-shadow: 1px 1px 8px 1px #51aeff6e;
+}
 .contactUs .boxContactUs #name {
-  width: 200px;
+  width: 280px;
   height: 36px;
+  font-weight: 900;
+  color: #fff;
   padding: 8px;
   margin-right: 28px;
   margin-bottom: 20px;
@@ -1097,8 +1083,10 @@ a.fr:before {
   border-radius: 5px;
 }
 .contactUs .boxContactUs #email {
-  width: 200px;
+  width: 280px;
   height: 36px;
+  font-weight: 900;
+  color: #fff;
   padding: 8px;
   margin-bottom: 20px;
   background-color: transparent;
@@ -1106,12 +1094,58 @@ a.fr:before {
   border-radius: 5px;
 }
 .contactUs .boxContactUs #sms {
-  width: 430px;
-  height: 90px;
+  font-weight: 900;
   padding: 8px;
+  color: #fff;
   background-color: transparent;
   border: 1px solid #636363;
   border-radius: 8px;
+}
+.contactUs .icons {
+  width: 30px;
+  height: 30px;
+  background-color: #f0f0f0;
+  border-radius: 100%;
+  margin-left: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactUs .icons a {
+  font-size: 14px;
+  color: #111;
+}
+.contactUs #submit{
+  width: 70px;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 14px;
+  align-self: flex-end;
+  color: #afafaf9a;
+  background-color: transparent;
+  border: 1px solid #636363;
+}
+
+.contactUs .contentGoMap{
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contactUs #goMap{
+  width: 202px;
+  height: 40px;
+  font-size: 14px;
+  margin-top: 14px;
+  display: flex;
+  align-self: flex-end;
+  color: #ffffff;
+  font-weight: 680;
+  align-items: center;
+  justify-content: center;
+  background-color: #bababa3c;
+  border: 1px solid #ffffff;
 }
 
 .footer {
@@ -1170,7 +1204,46 @@ a.fr:before {
     width: 90%;
   }
 }
+@media (max-width: 850px) {
+  .aboutUs .box-container h1 {
+    font-size: 5rem;
+  }
+  .aboutUs .box-container span {
+    font-size: 5rem;
+  }
+
+  .ourValues h1 {
+    font-size: 5rem;
+  }
+
+  .ourValues span {
+    font-size: 5rem;
+  }
+
+  .ourTeam .box-container h1 {
+    font-size: 5rem;
+  }
+  .ourTeam .box-container span {
+    font-size: 5rem;
+  }
+
+  .ourServices h1 {
+    font-size: 5rem;
+  }
+  .ourServices span {
+    font-size: 5rem;
+  }
+
+  .ourProcess .box-container h1 {
+    font-size: 5rem;
+  }
+  .ourProcess .box-container span {
+    font-size: 5rem;
+  }
+}
 @media (max-width: 844px) {
+
+  
   .footer .box-container {
     flex-wrap: wrap;
   }
@@ -1179,7 +1252,24 @@ a.fr:before {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
+
+  /* .contactUs{
+    flex-direction: column ;
+  }
+  .contactUs .column{
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contactUs .contactLeft{
+    width: 100%;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+  } */
+
   #visao-btn {
     display: block;
   }
@@ -1220,20 +1310,23 @@ a.fr:before {
     font-size: 1.35rem;
   }
 
+  .header .navbar .linkmenu {
+    font-size: 1.2rem;
+  }
   .header .navbar > a:hover {
     color: var(--main-color);
     padding-left: 16px;
     padding-right: 16px;
   }
   .header .navbar > a::before {
-    font-size: 2rem;
+    font-size: 1.4rem;
     content: '[';
     position: absolute;
     left: 40px;
     opacity: 0;
   }
   .header .navbar > a::after {
-    font-size: 2rem;
+    font-size: 1.4rem;
     content: ']';
     position: absolute;
     right: 40px;
@@ -1241,7 +1334,7 @@ a.fr:before {
     transition: 0.7s ease;
   }
   .header .navbar > a:hover::before {
-    font-size: 2rem;
+    font-size: 1.4rem;
     content: '[';
     position: absolute;
     display: inline;
@@ -1250,7 +1343,7 @@ a.fr:before {
     transition: 0.7s ease;
   }
   .header .navbar > a:hover::after {
-    font-size: 2rem;
+    font-size: 1.4rem;
     content: ']';
     position: absolute;
     display: inline;

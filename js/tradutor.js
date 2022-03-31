@@ -4,9 +4,9 @@ let langFr = document.getElementById('fr')
 let language = document.getElementById('language')
 let ulLang = document.getElementById('ulLang')
 
-let home = document.getElementById('home')
+let conteinerall = document.getElementById('conteinerall')
 
-home.addEventListener('click', () => {
+conteinerall.addEventListener('click', () => {
   ulLang.style.display = 'none'
 })
 language.addEventListener('click', () => {
@@ -126,9 +126,9 @@ langEn.addEventListener('click', () => {
 })
 
 langPt.addEventListener('click', () => {
-  ulLang.style.display = 'none'
   languageselected.classList.add('language-selectedBr')
   languageselected.textContent = 'pt-BR'
+  ulLang.style.display = 'none'
 
   languageselected.classList.remove('language-selected')
   languageselected.classList.remove('language-selectedFr')
@@ -267,9 +267,9 @@ langPt.addEventListener('click', () => {
 })
 
 langFr.addEventListener('click', () => {
-  ulLang.style.display = 'none'
   languageselected.classList.add('language-selectedFr')
   languageselected.textContent = 'FR'
+  ulLang.style.display = 'none'
 
   languageselected.classList.remove('language-selected')
   languageselected.classList.remove('language-selectedBr')
