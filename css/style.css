@@ -47,8 +47,7 @@ section {
   padding: 2rem 7%;
 }
 
-
-.conteinerAll{
+.conteinerAll {
   display: none;
 }
 
@@ -212,15 +211,15 @@ section {
   list-style: none;
   margin-bottom: 10px;
 }
-.language .ulLang .en{
+.language .ulLang .en {
   font-size: 0.5rem;
   color: red;
 }
-.language .ulLang .br{
+.language .ulLang .br {
   font-size: 0.5rem;
   color: red;
 }
-.language .ulLang .fr{
+.language .ulLang .fr {
   font-size: 0.5rem;
   color: red;
 }
@@ -967,7 +966,6 @@ section {
 
 .contactUs {
   width: 100%;
-  height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -987,8 +985,9 @@ section {
   animation: zoom 20s linear infinite;
 }
 
-.contactUs .headerContact{
-  display: flex; flex-direction: row
+.contactUs .headerContact {
+  display: flex;
+  flex-direction: row;
 }
 .contactUs .boxContactUs {
   position: relative;
@@ -1045,13 +1044,12 @@ section {
   justify-content: left;
 }
 
-.contactUs .contactLeft{
+.contactUs .contactLeft {
   width: 50%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
   flex-direction: column;
-
 }
 
 .contactUs .boxContactUs p {
@@ -1115,7 +1113,7 @@ section {
   font-size: 14px;
   color: #111;
 }
-.contactUs #submit{
+.contactUs #submit {
   width: 70px;
   height: 40px;
   font-size: 14px;
@@ -1126,14 +1124,14 @@ section {
   border: 1px solid #636363;
 }
 
-.contactUs .contentGoMap{
+.contactUs .contentGoMap {
   width: 100%;
   margin-top: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.contactUs #goMap{
+.contactUs #goMap {
   width: 202px;
   height: 40px;
   font-size: 14px;
@@ -1242,8 +1240,6 @@ section {
   }
 }
 @media (max-width: 844px) {
-
-  
   .footer .box-container {
     flex-wrap: wrap;
   }
@@ -1253,7 +1249,6 @@ section {
 }
 
 @media (max-width: 868px) {
-
   /* .contactUs{
     flex-direction: column ;
   }
