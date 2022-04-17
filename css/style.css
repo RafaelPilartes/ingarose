@@ -299,7 +299,7 @@ section {
 
 .home .content h4 {
   font-size: 7.2rem;
-  font-weight: 400;
+  font-weight: 1;
   line-height: 60px;
   letter-spacing: 3px;
   text-align: center;
@@ -310,7 +310,7 @@ section {
 }
 .home .content h2 {
   font-size: 7.2rem;
-  font-weight: 400;
+  font-weight: 1;
   line-height: 70px;
   letter-spacing: 3px;
   text-align: center;
@@ -337,7 +337,6 @@ section {
   text-align: center;
   padding: 1rem 0;
   color: #eee;
-  max-width: 360px;
   font-family: 'Raleway', sans-serif;
 }
 .areaBtnHome {
@@ -348,12 +347,13 @@ section {
   font-family: 'Raleway', sans-serif;
 }
 .btnHome {
-  width: 148px;
+  min-width: 148px;
   height: 40px;
   letter-spacing: 3px;
   font-weight: 900;
   margin-top: 20px;
   margin-left: 6px;
+  padding: 0 8px 0 8px;
   text-transform: uppercase;
   color: #fff;
   border: 1px solid #fff;

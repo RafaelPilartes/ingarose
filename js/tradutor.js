@@ -145,12 +145,12 @@ langPt.addEventListener('click', () => {
   // Home
   h4home.textContent = 'Sua Visão'
   h2home.textContent = 'NOSSA '
-  h1home.textContent = 'PAIXÃO'
+  h1home.textContent = ' PAIXÃO'
   p1home.textContent = 'A INGA ROSE É UMA BOUTIQUE'
-  p2home.textContent = 'CONSULTORIA FOCADA EM ESTRATÉGIA'
-  p3home.textContent = 'E GESTÃO'
+  p2home.textContent = 'CONSULTORIA FOCADA EM ESTRATÉGIA E'
+  p3home.textContent = 'GESTÃO'
   btn1home.textContent = 'Sobre nos'
-  btn2home.textContent = 'Contate-nos'
+  btn2home.textContent = 'ENTRE EM CONTATO CONOSCO'
 
   // Qualidades
   titleQualidade1.textContent = 'QUALIFICADO'
