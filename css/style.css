@@ -304,6 +304,7 @@ section {
   letter-spacing: 3px;
   text-align: center;
   padding: 0;
+  margin-bottom: 8px;
   text-transform: uppercase;
   color: #fff;
   font-family: 'Raleway', sans-serif;
@@ -313,6 +314,7 @@ section {
   font-weight: 1;
   line-height: 70px;
   letter-spacing: 3px;
+  margin-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
   color: #fff;
@@ -330,8 +332,8 @@ section {
 }
 
 .home .content p {
-  font-size: 1.5rem;
-  font-weight: 800;
+  font-size: 1.3rem;
+  font-weight: 900;
   line-height: 4px;
   letter-spacing: 3px;
   text-align: center;
@@ -996,10 +998,16 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 20px 40px 20px;
   z-index: 11;
 }
+
+.contactUs .boxContactUsRigth {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
 .contactUs h1 {
   font-size: 7rem;
   font-weight: 800;
@@ -1038,11 +1046,6 @@ section {
   color: #fff;
   z-index: 11;
 }
-.contactUs .boxContactUs {
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
 
 .contactUs .contactLeft {
   width: 50%;
@@ -1068,6 +1071,14 @@ section {
 .contactUs .boxContactUs .inputs:focus {
   box-shadow: 1px 1px 8px 1px #51aeff6e;
 }
+
+.contactUs .boxContactUsRigth .boxContactUsRigthNameEmail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: left;
+}
+
 .contactUs .boxContactUs #name {
   width: 280px;
   height: 36px;
@@ -1249,21 +1260,25 @@ section {
 }
 
 @media (max-width: 868px) {
-  /* .contactUs{
-    flex-direction: column ;
-  }
-  .contactUs .column{
-    flex-direction: column ;
-    align-items: center;
-    justify-content: center;
+  .contactUs .boxContactUs {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .contactUs .contactLeft{
+  .contactUs .boxContactUs .contactLeft {
     width: 100%;
-    flex-direction: column ;
     align-items: center;
     justify-content: center;
-  } */
+    text-align: center;
+  }
+  .contactUs .boxContactUsRigth {
+    width: 100%;
+  }
+
+  .contactUs .boxContactUs p {
+    text-align: center;
+    line-height: 20px;
+  }
 
   #visao-btn {
     display: block;
@@ -1383,6 +1398,23 @@ section {
     font-size: 2.5rem;
     margin-left: 2rem;
     display: inline;
+  }
+}
+
+@media (max-width: 630px) {
+  .contactUs .boxContactUsRigth .boxContactUsRigthNameEmail {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .contactUs .boxContactUs #name {
+    width: 100%;
+  }
+  .contactUs .boxContactUs #email {
+    width: 100%;
+  }
+  .contactUs .boxContactUs #sms {
+    width: 100%;
   }
 }
 
