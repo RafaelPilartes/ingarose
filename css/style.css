@@ -1008,7 +1008,7 @@ section {
   width: 50%;
 }
 
-.contactUs h1 {
+.contactUs .headerContact h1 {
   font-size: 7rem;
   font-weight: 800;
   letter-spacing: 3px;
@@ -1447,6 +1447,12 @@ section {
     font-size: 4rem;
   }
   .ourProcess .box-container span {
+    font-size: 4rem;
+  }
+  .contactUs .headerContact h1 {
+    font-size: 4rem;
+  }
+  .contactUs .headerContact span {
     font-size: 4rem;
   }
 }
