@@ -870,7 +870,7 @@ section {
   justify-content: center;
 }
 .ourProcess .box-container {
-  max-width: 1140px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
