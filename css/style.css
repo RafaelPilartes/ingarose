@@ -500,6 +500,9 @@ section {
   z-index: 10;
 }
 .qualidades .box-container .myQualidade {
+  max-width: 330px;
+  margin-left: 12px;
+  margin-rigth: 12px;
   display: flex;
   position: relative;
   flex-direction: column;
