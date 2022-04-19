@@ -688,7 +688,7 @@ section {
   position: relative;
 }
 .ourTeam .boxAbout {
-  max-width: 1140px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -734,7 +734,6 @@ section {
 }
 
 .ourValues {
-  width: 100%;
   position: relative;
   display: flex;
   flex-direction: column;
