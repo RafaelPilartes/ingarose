@@ -1,7 +1,9 @@
 let navbar = document.querySelector('.navbar');
+let header = document.getElementById('header')
 
 document.querySelector('#menu-btn').onclick = () =>{
     navbar.classList.toggle('active');
+    header.classList.add('sticky')
     searchForm.classList.remove('active');
     cartItem.classList.remove('active');
 }

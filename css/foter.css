@@ -1,3 +1,9 @@
+
+.footer {
+  background: #636363;
+  text-align: center;
+}
+
 .footer .box-container {
   display: -ms-grid;
   display: grid;
