@@ -37,12 +37,14 @@ let btn2home = document.getElementById('btn2home')
 // Qualidades
 let titleQualidade1 = document.getElementById('titleQualidade1')
 let subTitleQualidade1 = document.getElementById('subTitleQualidade1')
+let subTitleQualidade1_2 = document.getElementById('subTitleQualidade1_2')
 
 let titleQualidade2 = document.getElementById('titleQualidade2')
 let subTitleQualidade2 = document.getElementById('subTitleQualidade2')
 
 let titleQualidade3 = document.getElementById('titleQualidade3')
 let subTitleQualidade3 = document.getElementById('subTitleQualidade3')
+let subTitleQualidade3_2 = document.getElementById('subTitleQualidade3_2')
 
 // ABOUT US
 let titleAbout = document.getElementById('titleAbout')
@@ -60,6 +62,7 @@ let subtitleValue = document.getElementById('subtitleValue')
 
 let titleBoxValue1 = document.getElementById('titleBoxValue1')
 let SubtitleBoxValue1 = document.getElementById('SubtitleBoxValue1')
+let SubtitleBoxValue1_2 = document.getElementById('SubtitleBoxValue1_2')
 let titleBoxValue2 = document.getElementById('titleBoxValue2')
 let SubtitleBoxValue2 = document.getElementById('SubtitleBoxValue2')
 let titleBoxValue3 = document.getElementById('titleBoxValue3')
@@ -74,6 +77,7 @@ let titleSpanTeam = document.getElementById('titleSpanTeam')
 let subtitleTeam = document.getElementById('subtitleTeam')
 
 let descriptionTeam = document.getElementById('descriptionTeam')
+let descriptionTeam_2 = document.getElementById('descriptionTeam_2')
 
 // OUR SERVICE
 let titleServices = document.getElementById('titleServices')
@@ -154,15 +158,15 @@ langPt.addEventListener('click', () => {
 
   // Qualidades
   titleQualidade1.textContent = 'QUALIFICADO'
-  subTitleQualidade1.textContent =
-    'SOMOS PROFISSIONAIS QUE ESTÃO NO TOPO DE SEU JOGO '
+  subTitleQualidade1.textContent = 'PROFISSIONAIS EXPERIENTES'
+  subTitleQualidade1_2.textContent = 'ÁGIL E EFICIENTE '
 
   titleQualidade2.textContent = 'CONFIÁVEL'
-  subTitleQualidade2.textContent =
-    'TENHA A CERTEZA DE SERVIÇOS DISCRETOS E RESULTADOS GARANTIDOS'
+  subTitleQualidade2.textContent = 'RESULTADOS GARANTIDOS'
 
   titleQualidade3.textContent = 'GLOBAL'
-  subTitleQualidade3.textContent = 'LIDE CONOSCO EM VÁRIOS PAÍSES'
+  subTitleQualidade3.textContent = 'SERVINDO UMA BASE GLOBAL DE CLIENTES'
+  subTitleQualidade3_2.textContent = 'EM VÁRIAS INDÚSTRIAS'
 
   // ABOUT US
   titleAbout.textContent = 'Sobre'
@@ -171,7 +175,7 @@ langPt.addEventListener('click', () => {
   subtitleAbout.textContent = 'TRANSFORMANDO SUA VISÃO EM REALIDADE '
 
   descriptionAbout.textContent =
-    'A Inga Rose é uma empresa de consultoria focada em Estratégia e Gestão. Desenhamos, desenvolvemos e implementamos projetos estratégicos nas áreas Administrativa, Operacional, Controladoria e Sistemas. Facilitamos e aceleramos a compreensão de um mundo em constante evolução. Acreditamos firmemente em ir além do óbvio e não fazemos suposições. Desafiamos como as coisas podem ser melhoradas para beneficiar as partes interessadas e os parceiros. Valorizamos a diversidade, pois reflete toda a amplitude da sociedade em que atuamos, por isso atraímos profissionais altamente qualificados, com capacidade e determinação para influenciar e moldar o futuro. Acreditamos que desenvolver projetos é uma das principais formas de entender a sociedade contemporânea'
+    'A Inga Rose é uma empresa de consultoria e serviços técnicos sediada e detida em Angola, focada em Estratégia e Gestão. Ajudamos os clientes a identificar, desenvolver e implementar projetos e estruturar operações em ambientes desafiadores. Nossa ousadia molda o futuro e impulsiona mudanças positivas. A Inga Rose agrega valor real ao desempenho dos negócios nas áreas operacional, compras e supply chain, financeira, comercial, capital humano e administrativa.'
 
   // OUR VALUES
   titleValues.textContent = 'NOSSOS '
@@ -180,16 +184,16 @@ langPt.addEventListener('click', () => {
   subtitleValue.textContent = 'EM QUE ACREDITAMOS '
 
   titleBoxValue1.textContent = 'AGILIDADE '
-  SubtitleBoxValue1.textContent =
-    'Somos rápidos, ágeis e flexíveis. Trabalhamos de acordo com sua agenda e necessidades. Nossa ousadia transcende e transforma ideias.'
+  SubtitleBoxValue1.textContent = 'Rápido, ágil e flexível'
+  SubtitleBoxValue1_2.textContent = 'Sua agenda e exigências nosso compromisso'
 
   titleBoxValue2.textContent = 'EXCELÊNCIA EXECUCIONAL '
   SubtitleBoxValue2.textContent =
-    'Focamos na mais alta qualidade Fornecemos soluções sob medida Buscamos resultados extraordinários. '
+    'Força na diversidade de abordagens e origens unidas em visão e motivação. '
 
   titleBoxValue3.textContent = 'DIVERSIDADE '
   SubtitleBoxValue3.textContent =
-    'Acreditamos na diversidade e na inclusão Nossa equipe é multinacional, multigeracional e multicultural Trabalhamos em prol da igualdade e da unidade, '
+    'Retribuir, apoiar, capacitar e sustentabilidade estão no centro de tudo o que fazemos. '
 
   titleBoxValue4.textContent = 'DOAÇÃO DA COMUNIDADE '
   SubtitleBoxValue4.textContent =
@@ -202,7 +206,7 @@ langPt.addEventListener('click', () => {
   subtitleTeam.textContent = 'QUEM NÓS SOMOS'
 
   descriptionTeam.textContent =
-    'Valorizamos a diversidade, pois reflete toda a amplitude da sociedade em que atuamos, por isso atraímos profissionais altamente qualificados, com capacidade e determinação para influenciar e moldar o futuro.'
+    'Avaliamos, analisamos, desafiamos, unimos forças, construímos, trazemos mudanças sustentáveis e moldamos o futuro. Em parceria com clientes, stakeholders e comunidade: Juntos.'
 
   // OUR SERVICES
   titleServices.textContent = 'NOSSOS '
@@ -295,15 +299,15 @@ langFr.addEventListener('click', () => {
 
   // Qualidades
   titleQualidade1.textContent = 'CALIFICADO'
-  subTitleQualidade1.textContent =
-    'SOMOS PROFESIONALES QUE ESTÁN EN LA PARTE SUPERIOR DE SU JUEGO '
+  subTitleQualidade1.textContent = 'PROFESIONALES CON EXPERIENCIA '
+  subTitleQualidade1_2.textContent = 'ÁGIL Y EFICIENTE '
 
   titleQualidade2.textContent = 'DE CONFIANZA'
-  subTitleQualidade2.textContent =
-    'ASEGÚRESE DE SERVICIOS DISCRETOS Y RESULTADOS GARANTIZADOS'
+  subTitleQualidade2.textContent = 'RESULTADOS GARANTIZADOS'
 
   titleQualidade3.textContent = 'GLOBAL'
-  subTitleQualidade3.textContent = 'TRATA CON NOSOTROS EN MÚLTIPLES PAÍSES'
+  subTitleQualidade3.textContent = 'AL SERVICIO DE UNA BASE DE CLIENTES GLOBAL'
+  subTitleQualidade3_2.textContent = 'EN MÚLTIPLES INDUSTRIAS'
 
   // ABOUT US
   titleAbout.textContent = 'Sobre'
@@ -312,7 +316,7 @@ langFr.addEventListener('click', () => {
   subtitleAbout.textContent = 'CONVIRTIENDO SU VISIÓN EN REALIDAD '
 
   descriptionAbout.textContent =
-    'Inga Rose es una empresa de consultoría enfocada en Estrategia y Gestión. Diseñamos, desarrollamos e implementamos proyectos estratégicos en las áreas Administrativa, Operacional, de Contraloría y de Sistemas. Facilitamos y aceleramos la comprensión de un mundo en constante evolución. Creemos firmemente en ir más allá de lo obvio y no hacemos suposiciones. Desafiamos cómo se pueden mejorar las cosas para beneficiar a las partes interesadas y los socios. Valoramos la diversidad, ya que refleja toda la amplitud de la sociedad en la que operamos, por lo que atraemos a profesionales altamente calificados con capacidad y determinación para influir y dar forma al futuro. Creemos que desarrollar proyectos es una de las principales formas de entender la sociedad contemporánea'
+    'Inga Rose es una empresa de consultoría y servicios técnicos de propiedad y con sede en Angola centrada en la estrategia y la gestión. Ayudamos a los clientes a identificar, desarrollar e implementar proyectos y estructurar operaciones en entornos desafiantes. Nuestra audacia da forma al futuro e impulsa un cambio positivo. Inga Rose agrega valor real al desempeño comercial en las áreas operativa, de compras y cadena de suministro, financiera, comercial, de capital humano y administrativa.'
 
   // OUR VALUES
   titleValues.textContent = 'NUESTRO '
@@ -321,8 +325,9 @@ langFr.addEventListener('click', () => {
   subtitleValue.textContent = 'LO QUE CREEMOS '
 
   titleBoxValue1.textContent = 'AGILIDAD '
-  SubtitleBoxValue1.textContent =
-    'Somos rápidos, ágiles y flexibles. Trabajamos de acuerdo a su horario y necesidades. Nuestra audacia trasciende y transforma las ideas.'
+  SubtitleBoxValue1.textContent = 'Rápido, ágil y flexible'
+  SubtitleBoxValue1_2.textContent =
+    'Tu horario y requerimientos nuestro compromiso.'
 
   titleBoxValue2.textContent = 'EXCELENCIA EJECUTIVA '
   SubtitleBoxValue2.textContent =
