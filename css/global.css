@@ -4,9 +4,20 @@
 
 :root {
   --main-color: #bd8983;
-  --black: hsl(240, 16%, 9%);
+
+  --black: #000000;
+  --white: #ffffff;
+
+  --gray-light: #dddddd;
+  --gray-dark: #5a5a5a;
+
   --bg: #010103;
-  --border: 0.1rem solid rgba(255, 255, 255, 0.3);
+  --bg-section: #696868;
+
+  --title-bg-color: #484848;
+  --title-no-bg-color: #fbfbfb;
+
+  --border: 0.1rem solid #ffffff4d;
 }
 
 * {
@@ -40,7 +51,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 body {
-  background: #444444;
+  background: #fff;
 }
 
 section {
