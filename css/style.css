@@ -2,7 +2,6 @@
   display: none;
 }
 
-
 .home {
   min-height: 100vh;
   display: flex;
@@ -47,8 +46,8 @@
 
 .home .content h4 {
   font-size: 7.2rem;
-  font-weight: 1;
   line-height: 60px;
+  font-weight: 500;
   letter-spacing: 3px;
   text-align: center;
   padding: 0;
@@ -58,8 +57,8 @@
   font-family: 'Raleway', sans-serif;
 }
 .home .content h2 {
-  font-size: 7.2rem;
-  font-weight: 1;
+  font-size: 9.5rem;
+  font-weight: 500;
   line-height: 70px;
   letter-spacing: 3px;
   margin-bottom: 8px;
@@ -69,7 +68,7 @@
   font-family: 'Raleway', sans-serif;
 }
 .home .content h1 {
-  font-size: 8rem;
+  font-size: 9.5rem;
   font-weight: 600;
   line-height: 70px;
   letter-spacing: 3px;
@@ -259,6 +258,7 @@
 }
 .qualidades .box-container h2 {
   font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 500;
   letter-spacing: 3px;
   color: #facbb9;
@@ -268,6 +268,7 @@
 }
 .qualidades .box-container p {
   font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
   text-align: center;
@@ -275,14 +276,13 @@
 }
 
 .titleConteiner {
-  display: flex; 
-  flex-direction: row
+  display: flex;
+  flex-direction: row;
 }
 
 .aboutUs {
   width: 100%;
   position: relative;
-  
 }
 .aboutUs .boxAbout {
   width: 100%;
@@ -296,6 +296,7 @@
 
 .aboutUs .box-container h1 {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 3px;
   color: rgb(72, 72, 72);
@@ -362,6 +363,7 @@
 
 .ourValues h1 {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 3px;
   color: #facbb9;
@@ -371,6 +373,7 @@
 }
 .ourValues span {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-weight: 800;
   letter-spacing: 3px;
@@ -382,6 +385,7 @@
 
 .ourValues h5 {
   font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   color: #fff;
@@ -455,6 +459,7 @@
 
 .ourTeam .box-container h1 {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 3px;
   color: rgb(72, 72, 72);
@@ -463,6 +468,7 @@
 }
 .ourTeam .box-container span {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-weight: 800;
   letter-spacing: 3px;
@@ -473,6 +479,7 @@
 
 .ourTeam .box-container h5 {
   font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 8px;
@@ -637,6 +644,7 @@
 
 .ourProcess .box-container h1 {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 3px;
   color: rgb(72, 72, 72);
@@ -645,6 +653,7 @@
 }
 .ourProcess .box-container span {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-weight: 800;
   letter-spacing: 3px;
@@ -655,6 +664,7 @@
 
 .ourProcess .box-container h5 {
   font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 8px;
@@ -766,6 +776,7 @@
 
 .contactUs .headerContact h1 {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 800;
   letter-spacing: 3px;
   color: #facbb9;
@@ -775,6 +786,7 @@
 }
 .contactUs span {
   font-size: 7rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-weight: 800;
   letter-spacing: 3px;
@@ -786,6 +798,7 @@
 
 .contactUs h5 {
   font-size: 1.4rem;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   letter-spacing: 3px;
   color: #fff;
@@ -913,7 +926,6 @@
   border: 1px solid #ffffff;
 }
 
-
 /* media queries  */
 
 @media (max-width: 1031px) {
@@ -1037,7 +1049,6 @@
   #visao-btn {
     display: block;
   }
-
 }
 
 @media (max-width: 630px) {
@@ -1135,7 +1146,6 @@
 }
 
 @media (max-width: 450px) {
-  
   .recruitment .titleConteiner {
     height: 80px;
     display: block;
