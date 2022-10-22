@@ -10,7 +10,7 @@
 }
 .loader span {
   display: block;
-  background: #facbb9;
+  background: #111111;
   width: 7px;
   height: 10%;
   border-radius: 14px;
@@ -69,17 +69,17 @@
 
 @keyframes load {
   0% {
-    background: #ffbba0;
+    background: #3d3d3d;
     margin-top: 25%;
     height: 10%;
   }
   50% {
-    background: #facbb9;
+    background: #111111;
     height: 100%;
     margin-top: 0%;
   }
   100% {
-    background: #ffbba0;
+    background: #3d3d3d;
     height: 10%;
     margin-top: 25%;
   }

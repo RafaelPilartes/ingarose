@@ -133,7 +133,7 @@ langEn.addEventListener('click', () => {
 langPt.addEventListener('click', () => {
   ulLang.style.display = 'none'
   // languageselected.classList.add('language-selectedBr')
-  languageselected.textContent = 'pt-BR'
+  languageselected.textContent = 'pt-br'
 
   languageselected.classList.remove('language-selected')
   languageselected.classList.remove('language-selectedFr')
@@ -274,7 +274,7 @@ langPt.addEventListener('click', () => {
 
 langFr.addEventListener('click', () => {
   // languageselected.classList.add('language-selectedFr')
-  languageselected.textContent = 'FR'
+  languageselected.textContent = 'fr'
   ulLang.style.display = 'none'
 
   languageselected.classList.remove('language-selected')

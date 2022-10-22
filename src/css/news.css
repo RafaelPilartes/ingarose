@@ -5,12 +5,60 @@ a {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+  70% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .breadcrumbs {
-  background-color: var(--main-color);
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  background: transparent;
+  margin-bottom: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.breadcrumbs h2 {
-  color: #fff;
+.breadcrumbs .cover {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/blog/background-blog.jpg);
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  animation: zoom 24s linear infinite;
 }
+.breadcrumbs img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.breadcrumbs .titleContainer {
+  z-index: 99;
+}
+.breadcrumbs .titleContainer h1 {
+  font-size: 7rem;
+  color: #111111;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.breadcrumbs .titleContainer span {
+  color: var(--main-color);
+}
+
 .breadcrumbs li {
   color: #fff;
 }
@@ -27,6 +75,41 @@ a {
 
 .blog {
   padding: 40px 0 20px 0;
+}
+
+.blog .date-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-family: 'Raleway', sans-serif;
+}
+.blog .date-blog .day {
+  color: #bd8983;
+  margin-bottom: -28px;
+  font-weight: 800;
+  font-size: 8rem;
+  font-family: 'Raleway', sans-serif;
+}
+.blog .date-blog .date {
+  padding-bottom: 0.6rem;
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+}
+.blog .date-blog .by {
+  color: #bd8983;
+  padding-top: 2.6rem;
+  padding-left: 4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  border-top: 0.1rem solid #000000;
+}
+.blog .date-blog .by i {
+  color: #bd8983;
+  font-size: 1.1rem;
+  font-weight: 800;
 }
 
 .blog .entry {
@@ -473,19 +556,18 @@ a {
   float: left;
 }
 
-.blog .sidebar .recent-posts h4 {
+.blog .sidebar .recent-posts {
   font-size: 15px;
-  margin-left: 95px;
   font-weight: bold;
 }
 
-.blog .sidebar .recent-posts h4 a {
+.blog .sidebar .recent-posts a {
   color: #556270;
   transition: 0.3s;
 }
 
-.blog .sidebar .recent-posts h4 a:hover {
-  color: var(--blue-light);
+.blog .sidebar .recent-posts a:hover {
+  color: var(--main-color);
 }
 
 .blog .sidebar .recent-posts time {

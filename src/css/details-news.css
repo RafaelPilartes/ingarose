@@ -1,3 +1,11 @@
+*,
+p,
+h1,
+h3,
+a {
+  font-family: 'Raleway', sans-serif;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -24,6 +32,41 @@
   padding: 40px 0 20px 0;
 }
 
+.blog .date-blog {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  font-family: 'Raleway', sans-serif;
+}
+.blog .date-blog .day {
+  color: #bd8983;
+  margin-bottom: -28px;
+  font-weight: 800;
+  font-size: 8rem;
+  font-family: 'Raleway', sans-serif;
+}
+.blog .date-blog .date {
+  padding-bottom: 0.6rem;
+  font-weight: 700;
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+}
+.blog .date-blog .by {
+  color: #bd8983;
+  padding-top: 2.6rem;
+  padding-left: 4rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  border-top: 0.1rem solid #000000;
+}
+.blog .date-blog .by i {
+  color: #bd8983;
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
@@ -34,6 +77,9 @@
   max-height: 440px;
   margin: -30px -30px 20px -30px;
   overflow: hidden;
+}
+.blog .entry img {
+  width: 100%;
 }
 
 .blog .entry .entry-title {
@@ -86,6 +132,7 @@
 .blog .entry .entry-content p {
   font-size: 1.6rem;
   line-height: 24px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .blog .entry .entry-content .read-more {
@@ -469,18 +516,17 @@
   float: left;
 }
 
-.blog .sidebar .recent-posts h4 {
+.blog .sidebar .recent-posts {
   font-size: 15px;
-  margin-left: 95px;
   font-weight: bold;
 }
 
-.blog .sidebar .recent-posts h4 a {
+.blog .sidebar .recent-posts a {
   color: #556270;
   transition: 0.3s;
 }
 
-.blog .sidebar .recent-posts h4 a:hover {
+.blog .sidebar .recent-posts a:hover {
   color: var(--main-color);
 }
 

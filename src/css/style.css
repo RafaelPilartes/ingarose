@@ -225,6 +225,7 @@
 }
 
 .aboutUs .box-container p {
+  max-width: 86%;
   font-size: 1.6rem;
   font-weight: 500;
   color: #111;
